@@ -26,7 +26,7 @@ class App extends Component {
 
     return (
       <div className="App">
-      <ul>
+      <ul className="pokemon-list">
       {this.pokemon.map((item,index)=>{
         return(
           <Poket item={item} index={index}/>

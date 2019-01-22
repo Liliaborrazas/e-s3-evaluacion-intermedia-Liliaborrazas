@@ -24,6 +24,9 @@
   margin: 5px;
   
 }
+.pokemon-list{
+  list-style: none;
+}
 
 .App-link {
   color: #61dafb;
