@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  
+}
+.poketList{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 150px;
+  background-color: rgb(215, 239, 248);
+  text-align: center;
+  
+}
+.typesPoket{
+  background: gray;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 auto;
+  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
