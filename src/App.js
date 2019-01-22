@@ -26,6 +26,28 @@ class App extends Component {
 
     return (
       <div className="App">
+        <ul className="list-poket">
+        {this.pokemon.map((item)=>{
+        return(
+        <li className="item-poket">
+        <div className="card-poket">
+        <img src={item.url} alt={item.name}/>
+        <h4 className="title.poket">{item.name}</h4>
+         <ul className="type-poket">
+         {item.types.map((i)=>{
+           return(
+             <li>{i}</li>
+           )
+         })}
+          
+        </ul>
+        </div>
+        </li>
+
+)
+})}
+      
+       </ul>
       </div>
       
     );
