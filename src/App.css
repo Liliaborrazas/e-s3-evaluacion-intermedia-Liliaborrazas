@@ -2,35 +2,6 @@
   text-align: center;
   
 }
-.poketList{
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 150px;
-  background-color: rgb(215, 239, 248);
-  text-align: center;
-  
-}
-.typesPoket{
-  border-radius: 5px;
-  text-align: center;
-  padding: 0 auto;
-  background: gray;
-  
-}
-.typesPoket{
-  list-style: none;
-}
-.typeItem{
-  margin: 5px;
-  
-}
-.pokemon-list{
-  list-style: none;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {

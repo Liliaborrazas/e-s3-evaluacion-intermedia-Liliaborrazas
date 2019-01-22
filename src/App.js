@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Pokemon from './components/Pokemon';
+
 
 
 class App extends Component {
@@ -26,7 +26,6 @@ class App extends Component {
 
     return (
       <div className="App">
-      <Pokemon pokemon={this.pokemon}/>
       </div>
       
     );
