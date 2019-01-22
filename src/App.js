@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Pokemon from './components/Pokemon';
+import Poket from './components/Poket';
 
 class App extends Component {
   constructor(props){
@@ -25,18 +26,13 @@ class App extends Component {
 
     return (
       <div className="App">
+      <ul>
       {this.pokemon.map((item,index)=>{
         return(
-          <div className="poketList">
-          <img src={item.url}className="imgPoket" key={index}/>
-          <h4 className="titleList" key={index}>
-          {item.name}
-          </h4>
-          <p className="typesPoket" key={index}>
-          {item.types}</p> 
-          </div>   
+          <Poket item={item} index={index}/>
         )
       })}
+      </ul>
       </div>
       
     );

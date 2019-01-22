@@ -11,10 +11,17 @@
   
 }
 .typesPoket{
-  background: gray;
   border-radius: 5px;
   text-align: center;
   padding: 0 auto;
+  background: gray;
+  
+}
+.typesPoket{
+  list-style: none;
+}
+.typeItem{
+  margin: 5px;
   
 }
 
