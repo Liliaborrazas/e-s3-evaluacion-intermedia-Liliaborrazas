@@ -26,8 +26,27 @@ class App extends Component {
 
     return (
       <div className="app">
-        
-        
+       {this.pokemon.map((item)=>{
+         return(
+           <ul className="card-pokemon">
+           <div className="card-pokemon__list">
+           <li className="list-pokemon">
+           <h4 className="title">{item.name}</h4>
+           <img src={item.url} alt="{item.name}"/>
+           <div className="types-evolution">
+           {item.types.map((i)=>{
+             return(
+               <div>{i}</div>
+             )
+           })}
+           </div>
+           </li>
+
+           </div>
+           
+           </ul>
+         )
+       })}
         
       </div>
       
