@@ -1,8 +1,39 @@
 .app {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  
+  
   
 }
+.items-evolition{
+  margin: 0 auto;
+  padding: 0; 
+  list-style: none;
+  text-align: center;
+  
+  
+}
+.item-evol{
+  text-align: center;
+}
+.card-pokemon{
+  margin: 0 auto;
+  padding: 0 auto;
+  list-style: none;
+  
+  
+}
+.card-pokemon__list{
+  background-color: aquamarine;
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
 
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

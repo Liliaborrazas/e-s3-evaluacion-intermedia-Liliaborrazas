@@ -36,7 +36,11 @@ class App extends Component {
            <div className="types-evolution">
            {item.types.map((i)=>{
              return(
-               <div>{i}</div>
+               <ul className="items-evolition">
+                 <li className="item-evol">
+                   {i}
+                 </li>
+               </ul>
              )
            })}
            </div>
