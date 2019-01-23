@@ -6,7 +6,7 @@ class Poket extends Component {
         return(
             <div className="card-poket">
             <img src={item.url} alt={item.name}/>
-            <h4 className="title.poket">{item.name}</h4>
+            <h4 className="title-poket">{item.name}</h4>
              <ul className="type-poket">
              {item.types.map((type, index)=>{
                return(

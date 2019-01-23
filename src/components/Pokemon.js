@@ -1,18 +1,25 @@
 import React, { Component } from 'react'; 
-
+import Poket from './Poket';
 
 class Pokemon extends Component {
-    constructor(props){
-        super(props);
-
-    }
+   
     render(){
         return(
-            <ul></ul>
+            <ul className="list-poket">
+        {this.props.pokemon.map((item)=>{
+        return(
+        <li className="item-poket">
+        <Poket item={item}/>
+        </li>
+
+)
+})}
+      
+       </ul>
         )
     }
     
-
+    
     
         
 }
