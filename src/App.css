@@ -26,6 +26,12 @@
   
   
 }
+.input{
+  width: 30%;
+  height: 30px;
+  border: 2px solid black;
+
+}
 .card-pokemon__list{
   background-color:orange;
   width: 150px;

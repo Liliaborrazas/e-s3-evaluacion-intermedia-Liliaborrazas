@@ -7,6 +7,10 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      poket: [],
+      poketName: ''
+  }    
     this.pokemon= [
       {"id":1,"name":"bulbasaur","types":["poison","grass"],"evolution":null,"url":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"},
       {"id":2,"name":"ivysaur","types":["poison","grass"],"evolution":"bulbasaur","url":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"},
@@ -21,12 +25,26 @@ class App extends Component {
    ];
 
   } 
+  filterPoket(e){
+    const author = e.currentTarget.value;
+    this.setState({poketName:author})
+  }
+  filterInput(){
+    const poket = this.state.poket;
+    const poketName = this.state.poketName;
+    return poket.filter(item=>{
+      item.name.toLowerCase().includes()
+    })
+  }
 
   
   render() {
 
     return (
       <div className="app">
+      <header>
+        <input type="text" className="input" placeholder="Busca tu poket" />
+      </header>
        {this.pokemon.map((item)=>{
          return(
            <ListPoket item={item}/>
