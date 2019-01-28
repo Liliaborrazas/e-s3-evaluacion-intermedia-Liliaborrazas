@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListPoket from './components/ListPoket';
 import './App.css';
 
 
@@ -28,27 +29,7 @@ class App extends Component {
       <div className="app">
        {this.pokemon.map((item)=>{
          return(
-           <ul className="card-pokemon">
-           <div className="card-pokemon__list">
-           <li className="list-pokemon">
-           <h4 className="title">{item.name}</h4>
-           <img src={item.url} alt="{item.name}"/>
-           <div className="types-evolution">
-           {item.types.map((i)=>{
-             return(
-               <ul className="items-evolition">
-                 <li className="item-evol">
-                   {i}
-                 </li>
-               </ul>
-             )
-           })}
-           </div>
-           </li>
-
-           </div>
-           
-           </ul>
+           <ListPoket item={item}/>
          )
        })}
         
