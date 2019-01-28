@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-class Poket extends Component {
+class CardPoket extends Component {
     render(){
-        return(
-            <ul></ul>
+        return(<ul></ul>
         )
     }
 
@@ -12,4 +11,4 @@ class Poket extends Component {
 
 
 
-export default Poket;
+export default CardPoket;
