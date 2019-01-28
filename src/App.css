@@ -19,6 +19,7 @@
   text-align: center;
 }
 .card-pokemon{
+  
   margin: 0 auto;
   padding: 0 auto;
   list-style: none;
@@ -26,7 +27,7 @@
   
 }
 .card-pokemon__list{
-  background-color: aquamarine;
+  background-color:orange;
   width: 150px;
   height: 200px;
   border: 1px solid black;
